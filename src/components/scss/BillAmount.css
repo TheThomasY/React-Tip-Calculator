@@ -1,0 +1,28 @@
+.bill-title {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.bill-input-container {
+  position: relative;
+}
+
+.bill-currency {
+  position: absolute;
+  top: 2.5rem;
+  left: 1.5rem;
+  font-size: 2.4rem;
+}
+
+.bill-input {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  font-family: 'Space Mono', monospace;
+  border: none;
+  border-radius: 0.5rem;
+}
+/*# sourceMappingURL=BillAmount.css.map */
