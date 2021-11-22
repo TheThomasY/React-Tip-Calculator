@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -27,5 +26,22 @@ body {
   letter-spacing: 1rem;
   text-align: center;
   color: #00494d;
+}
+
+.bill-title {
+  color: #5e7a7d;
+}
+
+.bill-currency {
+  color: #7f9c9f;
+}
+
+.bill-input {
+  color: #00494d;
+  background-color: #f4fafa;
+}
+
+.bill-input:focus {
+  outline: 2px solid #26c0ab;
 }
 /*# sourceMappingURL=App.css.map */
