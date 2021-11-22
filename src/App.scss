@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+// Colours
+
+$Strong-cyan: hsl(172, 67%, 45%);
+
+$vdk-cyan: hsl(183, 100%, 15%);
+$dk-cyan-1: hsl(186, 14%, 43%);
+$dk-cyan-2: hsl(184, 14%, 56%);
+$bg: hsl(185, 41%, 84%);
+$light-cyan-2: hsl(189, 41%, 97%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: $bg;
+}
+
+.main-title {
+  margin-top: 5rem;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  text-align: center;
+  color: $vdk-cyan;
+}
