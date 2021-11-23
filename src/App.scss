@@ -2,7 +2,7 @@
 
 // Colours
 
-$Strong-cyan: hsl(172, 67%, 45%);
+$strong-cyan: hsl(172, 67%, 45%);
 
 $vdk-cyan: hsl(183, 100%, 15%);
 $dk-cyan-1: hsl(186, 14%, 43%);
@@ -19,6 +19,10 @@ $light-cyan-2: hsl(189, 41%, 97%);
 * {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 html {
@@ -39,7 +43,8 @@ body {
   color: $vdk-cyan;
 }
 
-.bill-title {
+.section-title {
+  font-size: 1.6rem;
   color: $dk-cyan-1;
 }
 
@@ -52,6 +57,23 @@ body {
   background-color: $light-cyan-2;
 
   &:focus {
-    outline: 2px solid $Strong-cyan;
+    outline: 2px solid $strong-cyan;
+  }
+}
+
+.tip-grid {
+  li {
+    background-color: $vdk-cyan;
+    color: #fff;
+  }
+
+  li:hover {
+    background-color: $strong-cyan;
+    color: $vdk-cyan;
+  }
+
+  .tip-custom-btn {
+    background-color: $light-cyan-2;
+    color: $dk-cyan-1;
   }
 }
