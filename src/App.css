@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -28,7 +32,8 @@ body {
   color: #00494d;
 }
 
-.bill-title {
+.section-title {
+  font-size: 1.6rem;
   color: #5e7a7d;
 }
 
@@ -43,5 +48,20 @@ body {
 
 .bill-input:focus {
   outline: 2px solid #26c0ab;
+}
+
+.tip-grid li {
+  background-color: #00494d;
+  color: #fff;
+}
+
+.tip-grid li:hover {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.tip-grid .tip-custom-btn {
+  background-color: #f4fafa;
+  color: #5e7a7d;
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,21 @@
+.tip-select {
+  margin-top: 4rem;
+}
+
+.tip-grid {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.tip-grid li {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=TipSelect.css.map */
