@@ -34,13 +34,9 @@ body {
   background-color: $bg;
 }
 
-.main-title {
-  margin-top: 5rem;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1rem;
-  text-align: center;
-  color: $vdk-cyan;
+.main-logo {
+  display: block;
+  margin: 5rem auto 0 auto;
 }
 
 .section-title {
@@ -48,11 +44,8 @@ body {
   color: $dk-cyan-1;
 }
 
-.bill-currency {
-  color: $dk-cyan-2;
-}
-
-.bill-input {
+.input-bar,
+.custom-input-bar {
   color: $vdk-cyan;
   background-color: $light-cyan-2;
 
@@ -68,12 +61,35 @@ body {
   }
 
   li:hover {
-    background-color: $strong-cyan;
+    background-color: hsl(172, 64%, 76%);
     color: $vdk-cyan;
   }
 
   .tip-custom-btn {
     background-color: $light-cyan-2;
     color: $dk-cyan-1;
+  }
+}
+
+.result-card {
+  background-color: $vdk-cyan;
+  color: #fff;
+}
+
+.per-person {
+  color: $dk-cyan-2;
+}
+
+.amount-data {
+  color: $strong-cyan;
+}
+
+.reset-btn {
+  background-color: $strong-cyan;
+  color: $vdk-cyan;
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(172, 64%, 76%);
   }
 }
