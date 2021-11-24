@@ -11,9 +11,11 @@ function App() {
     <div>
       <img className='main-logo' src={logo} alt='Logo' />
       <Card className='main-card'>
-        <BillAmount />
-        <TipSelect />
-        <NoOfPeople />
+        <div className=''>
+          <BillAmount />
+          <TipSelect />
+          <NoOfPeople />
+        </div>
         <ResultCard />
       </Card>
     </div>
