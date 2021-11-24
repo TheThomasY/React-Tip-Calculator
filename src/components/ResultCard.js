@@ -16,7 +16,7 @@ export default function ResultCard() {
           <div className='amount-total'>Total</div>
           <div className='per-person'>/ person</div>
         </div>
-        <div className='amount-data'>$32.79</div>
+        <div className='amount-data'>$320.79</div>
       </div>
       <div className='reset-btn'>RESET</div>
     </div>

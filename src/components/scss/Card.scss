@@ -6,3 +6,12 @@
   font-size: 2.4rem;
   background-color: #fff;
 }
+
+@media screen and (min-width: 1000px) {
+  .main-card {
+    width: 65%;
+    max-width: 93rem;
+    margin: 8rem auto 0 auto;
+    display: flex;
+  }
+}
