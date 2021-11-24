@@ -4,9 +4,21 @@ import './scss/ResultCard.css';
 export default function ResultCard() {
   return (
     <div className='result-card'>
-      <div className=''>Tip Amount</div>
-      <div className=''> Total</div>
-      <div className=''>RESET</div>
+      <div className='amount-container'>
+        <div className='amount-text'>
+          <div className='amount-total'>Tip Amount</div>
+          <div className='per-person'>/ person</div>
+        </div>
+        <div className='amount-data'>$4.27</div>
+      </div>
+      <div className='amount-container'>
+        <div className='amount-text'>
+          <div className='amount-total'>Total</div>
+          <div className='per-person'>/ person</div>
+        </div>
+        <div className='amount-data'>$32.79</div>
+      </div>
+      <div className='reset-btn'>RESET</div>
     </div>
   );
 }

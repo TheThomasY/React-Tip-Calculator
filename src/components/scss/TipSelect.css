@@ -18,4 +18,15 @@
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+.tip-grid .custom-input-bar {
+  width: 100%;
+  padding-right: 1.5rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  font-family: 'Space Mono', monospace;
+  border: none;
+  border-radius: 0.5rem;
+}
 /*# sourceMappingURL=TipSelect.css.map */

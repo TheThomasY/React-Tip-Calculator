@@ -12,7 +12,7 @@ export default function TipSelect() {
         <li>15%</li>
         <li>25%</li>
         <li>50%</li>
-        <li className='tip-custom-btn'>Custom</li>
+        <input className='custom-input-bar' type='text' placeholder='Custom' />
       </ul>
     </div>
   );

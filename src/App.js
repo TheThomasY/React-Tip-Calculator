@@ -1,4 +1,5 @@
 import './App.css';
+import logo from './images/logo.svg';
 import Card from './components/Card';
 import BillAmount from './components/BillAmount';
 import TipSelect from './components/TipSelect';
@@ -8,10 +9,7 @@ import ResultCard from './components/ResultCard';
 function App() {
   return (
     <div>
-      <div className='main-title'>
-        <h1>SPLI</h1>
-        <h1>TTER</h1>
-      </div>
+      <img className='main-logo' src={logo} alt='Logo' />
       <Card className='main-card'>
         <BillAmount />
         <TipSelect />
