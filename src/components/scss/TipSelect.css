@@ -19,6 +19,15 @@
   cursor: pointer;
 }
 
+.tip-grid .selected {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.tip-grid .selected:hover {
+  background-color: #26c0ab;
+}
+
 .tip-grid .custom-input-bar {
   width: 100%;
   padding-right: 1.5rem;

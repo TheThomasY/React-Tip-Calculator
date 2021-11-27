@@ -1,7 +1,7 @@
 import React from 'react';
 import './scss/ResultCard.css';
 
-export default function ResultCard() {
+export default function ResultCard(props) {
   return (
     <div className='result-card'>
       <div className='amount-container'>
