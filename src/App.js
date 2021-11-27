@@ -12,16 +12,34 @@ function App() {
   const [tipPercentage, setTipPercentage] = useState('');
   const [peopleNo, setPeopleNo] = useState('');
 
-  const billTotalChange = (billTotal) => {
-    setBillTotal(billTotal);
+  const [tipData, setTipData] = useState({
+    billTotal: '',
+    tipPercentage: '',
+    peopleNo: '',
+  });
+
+  const [tipAmount, setTipAmount] = useState('');
+  const [total, setTotal] = useState('');
+
+  const billTotalChange = (billTotalInput) => {
+    // setBillTotal(billTotalInput);
+    setTipData((prevTipData) => {
+      return { ...prevTipData, billTotal: billTotalInput };
+    });
   };
 
-  const tipPercentageSelect = (percentage) => {
-    setTipPercentage(percentage);
+  const tipPercentageSelect = (percentageInput) => {
+    // setTipPercentage(percentageInput);
+    setTipData((prevTipData) => {
+      return { ...prevTipData, tipPercentage: percentageInput };
+    });
   };
 
-  const peopleChange = (peopleNo) => {
-    setPeopleNo(peopleNo);
+  const peopleChange = (peopleNoInput) => {
+    // setPeopleNo(peopleNoInput);
+    setTipData((prevTipData) => {
+      return { ...prevTipData, peopleNo: peopleNoInput };
+    });
   };
 
   return (
@@ -33,11 +51,7 @@ function App() {
           <TipSelect onPercentageSelect={tipPercentageSelect} />
           <NoOfPeople onPeopleChange={peopleChange} />
         </div>
-        <ResultCard
-          billTotal={billTotal}
-          tip={tipPercentage}
-          people={peopleNo}
-        />
+        <ResultCard tipAmount={tipAmount} total={total} data={tipData} />
       </Card>
     </div>
   );
