@@ -11,7 +11,12 @@ export default function NoOfPeople(props) {
     <div className='no-of-people'>
       <h4 className='section-title'>Number of People</h4>
       <img className='input-icon icon-person' src={person} alt='Person icon' />
-      <input onChange={peopleChangeHandler} className='input-bar' type='text' />
+      <input
+        onChange={peopleChangeHandler}
+        value={props.data.peopleNo}
+        className='input-bar'
+        type='text'
+      />
     </div>
   );
 }

@@ -6,7 +6,12 @@ export default function ResultCard(props) {
   let peopleNo = parseInt(props.data.peopleNo);
 
   let tipAmount = (billTotal * (tipPercentage / 100)) / peopleNo;
+  let tipAmountRounded = Math.floor(tipAmount * 100) / 100;
   let split = billTotal / peopleNo + tipAmount;
+
+  const resetAllHandler = () => {
+    props.onReset();
+  };
 
   return (
     <div className='result-card'>
@@ -17,7 +22,7 @@ export default function ResultCard(props) {
         </div>
         <div className='amount-data'>
           {'$'}
-          {!isNaN(tipAmount) ? tipAmount.toFixed(2) : ''}
+          {!isNaN(tipAmount) ? tipAmountRounded : ''}
         </div>
       </div>
       <div className='amount-container'>
@@ -30,7 +35,9 @@ export default function ResultCard(props) {
           {!isNaN(split) ? split.toFixed(2) : ''}
         </div>
       </div>
-      <div className='reset-btn'>RESET</div>
+      <div onClick={resetAllHandler} className='reset-btn'>
+        RESET
+      </div>
     </div>
   );
 }
