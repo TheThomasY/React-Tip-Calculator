@@ -10,9 +10,10 @@ It is a solution to the [Tip calculator app challenge on Frontend Mentor](https:
 
 ## Screenshots 📷
 
-![](./screenshots/screenshot-mobile.png)
-
-![](./screenshots/screenshot-desktop.png)
+<p float="left">
+  <img src="./screenshots/screenshot-desktop.png">
+  <img src="./screenshots/screenshot-mobile.png" width="300px">
+</p>
 
 ## Built With 🛠
 
