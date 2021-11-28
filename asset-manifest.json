@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React-Tip-Calculator/static/css/main.baaa09e9.chunk.css",
+    "main.js": "/React-Tip-Calculator/static/js/main.12b0b732.chunk.js",
+    "main.js.map": "/React-Tip-Calculator/static/js/main.12b0b732.chunk.js.map",
+    "runtime-main.js": "/React-Tip-Calculator/static/js/runtime-main.6d2b9c39.js",
+    "runtime-main.js.map": "/React-Tip-Calculator/static/js/runtime-main.6d2b9c39.js.map",
+    "static/js/2.cdb6b6b7.chunk.js": "/React-Tip-Calculator/static/js/2.cdb6b6b7.chunk.js",
+    "static/js/2.cdb6b6b7.chunk.js.map": "/React-Tip-Calculator/static/js/2.cdb6b6b7.chunk.js.map",
+    "static/js/3.033a1373.chunk.js": "/React-Tip-Calculator/static/js/3.033a1373.chunk.js",
+    "static/js/3.033a1373.chunk.js.map": "/React-Tip-Calculator/static/js/3.033a1373.chunk.js.map",
+    "index.html": "/React-Tip-Calculator/index.html",
+    "static/css/main.baaa09e9.chunk.css.map": "/React-Tip-Calculator/static/css/main.baaa09e9.chunk.css.map",
+    "static/js/2.cdb6b6b7.chunk.js.LICENSE.txt": "/React-Tip-Calculator/static/js/2.cdb6b6b7.chunk.js.LICENSE.txt",
+    "static/media/icon-dollar.9f9be353.svg": "/React-Tip-Calculator/static/media/icon-dollar.9f9be353.svg",
+    "static/media/icon-person.65bfd204.svg": "/React-Tip-Calculator/static/media/icon-person.65bfd204.svg",
+    "static/media/logo.3cc0528b.svg": "/React-Tip-Calculator/static/media/logo.3cc0528b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d2b9c39.js",
+    "static/js/2.cdb6b6b7.chunk.js",
+    "static/css/main.baaa09e9.chunk.css",
+    "static/js/main.12b0b732.chunk.js"
+  ]
+}
