@@ -1,18 +1,18 @@
 <h1 align="center">React Tip Calculator</h1>
 
-This app was built with React and styled with SCSS. 
+This app was built with React and styled with SCSS.
 
 It is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
 
 ## Links 🌟
 
-- Live site: [Try it out here 💻](https://thethomasy.github.io/React-Tip-Calculator/ "Live View")
+- Live site: [Try it out here 💻](https://thethomasy.github.io/React-Tip-Calculator/ 'Live View')
 
 ## Screenshots 📷
 
-<!-- ![](./screenshots/screenshot-dark.png)
+![](./screenshots/screenshot-mobile.png)
 
-![](./screenshots/screenshot-light.png) -->
+![](./screenshots/screenshot-desktop.png)
 
 ## Built With 🛠
 
@@ -23,13 +23,14 @@ It is a solution to the [Tip calculator app challenge on Frontend Mentor](https:
 
 - [ ] Add error messages
 - [ ] Start checking validity of input
+- [ ] Change "empty" states of output to be $0.00
 
 ## Author 🧑
 
 **Tom Young**
 
 - [Github Profile 👨‍💻](https://github.com/TheThomasY)
-- [Email ✉](mailto:tomyoungdev@gmail.com?subject=Hi "Hi!")
+- [Email ✉](mailto:tomyoungdev@gmail.com?subject=Hi 'Hi!')
 - [LinkedIn 💼](https://www.linkedin.com/in/tom-young5555/)
 - [Dev.to 🖊](https://dev.to/thetomy)
 
