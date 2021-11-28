@@ -10,7 +10,12 @@ export default function BillAmount(props) {
     <div className='bill-amount'>
       <h2 className='section-title'>Bill</h2>
       <img className='input-icon icon-dollar' src={dollar} alt='Dollar icon' />
-      <input onChange={billChangeHandler} className='input-bar' type='text' />
+      <input
+        onChange={billChangeHandler}
+        value={props.data.billTotal}
+        className='input-bar'
+        type='text'
+      />
     </div>
   );
 }

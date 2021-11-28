@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
 import './scss/TipSelect.css';
 
 export default function TipSelect(props) {
-  const [selectedTip, setSelectedTip] = useState('');
-  const [customTip, setCustomTip] = useState('');
+  let selectedTip = props.data.tipPercentage;
 
   const percentageSelectHandler = (event) => {
     props.onPercentageSelect(event.target.id);
-    setSelectedTip(event.target.id);
-    setCustomTip('');
   };
 
   const percentageChangeHandler = (event) => {
     props.onPercentageSelect(event.target.value);
-    setCustomTip(event.target.value);
-    setSelectedTip('');
+    props.onPercentageCustom(event.target.value);
   };
 
   return (
@@ -58,7 +53,7 @@ export default function TipSelect(props) {
         </li>
         <input
           onChange={percentageChangeHandler}
-          value={customTip}
+          value={props.customValue}
           className='custom-input-bar'
           type='text'
           placeholder='Custom'

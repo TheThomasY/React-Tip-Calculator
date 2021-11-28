@@ -8,38 +8,44 @@ import NoOfPeople from './components/NoOfPeople';
 import ResultCard from './components/ResultCard';
 
 function App() {
-  const [billTotal, setBillTotal] = useState('');
-  const [tipPercentage, setTipPercentage] = useState('');
-  const [peopleNo, setPeopleNo] = useState('');
-
   const [tipData, setTipData] = useState({
     billTotal: '',
     tipPercentage: '',
     peopleNo: '',
   });
 
-  const [tipAmount, setTipAmount] = useState('');
-  const [total, setTotal] = useState('');
+  // Only used to reset the custom input
+  const [customTip, setCustomTip] = useState('');
 
   const billTotalChange = (billTotalInput) => {
-    // setBillTotal(billTotalInput);
     setTipData((prevTipData) => {
       return { ...prevTipData, billTotal: billTotalInput };
     });
   };
 
   const tipPercentageSelect = (percentageInput) => {
-    // setTipPercentage(percentageInput);
     setTipData((prevTipData) => {
       return { ...prevTipData, tipPercentage: percentageInput };
     });
   };
 
+  const tipPercentageCustom = (customValue) => {
+    setCustomTip(customValue);
+  };
+
   const peopleChange = (peopleNoInput) => {
-    // setPeopleNo(peopleNoInput);
     setTipData((prevTipData) => {
       return { ...prevTipData, peopleNo: peopleNoInput };
     });
+  };
+
+  const resetAll = () => {
+    setTipData({
+      billTotal: '',
+      tipPercentage: '',
+      peopleNo: '',
+    });
+    setCustomTip('');
   };
 
   return (
@@ -47,11 +53,16 @@ function App() {
       <img className='main-logo' src={logo} alt='Logo' />
       <Card className='main-card'>
         <div className=''>
-          <BillAmount onBillChange={billTotalChange} />
-          <TipSelect onPercentageSelect={tipPercentageSelect} />
-          <NoOfPeople onPeopleChange={peopleChange} />
+          <BillAmount onBillChange={billTotalChange} data={tipData} />
+          <TipSelect
+            onPercentageSelect={tipPercentageSelect}
+            data={tipData}
+            customValue={customTip}
+            onPercentageCustom={tipPercentageCustom}
+          />
+          <NoOfPeople onPeopleChange={peopleChange} data={tipData} />
         </div>
-        <ResultCard tipAmount={tipAmount} total={total} data={tipData} />
+        <ResultCard data={tipData} onReset={resetAll} />
       </Card>
     </div>
   );
