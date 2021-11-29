@@ -54,9 +54,8 @@ body {
   color: #00494d;
 }
 
-.tip-grid .tip-custom-btn {
-  background-color: #f4fafa;
-  color: #5e7a7d;
+.tip-grid .custom-input-bar {
+  cursor: pointer;
 }
 
 .result-card {

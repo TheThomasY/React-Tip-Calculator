@@ -14,7 +14,7 @@ function App() {
     peopleNo: '',
   });
 
-  // Only used to reset the custom input
+  // Used to reset the custom input value
   const [customTip, setCustomTip] = useState('');
 
   const billTotalChange = (billTotalInput) => {
@@ -27,9 +27,13 @@ function App() {
     setTipData((prevTipData) => {
       return { ...prevTipData, tipPercentage: percentageInput };
     });
+    setCustomTip('');
   };
 
   const tipPercentageCustom = (customValue) => {
+    setTipData((prevTipData) => {
+      return { ...prevTipData, tipPercentage: customValue };
+    });
     setCustomTip(customValue);
   };
 

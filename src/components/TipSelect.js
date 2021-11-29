@@ -8,7 +8,6 @@ export default function TipSelect(props) {
   };
 
   const percentageChangeHandler = (event) => {
-    props.onPercentageSelect(event.target.value);
     props.onPercentageCustom(event.target.value);
   };
 

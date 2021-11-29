@@ -22,7 +22,7 @@ export default function ResultCard(props) {
         </div>
         <div className='amount-data'>
           {'$'}
-          {!isNaN(tipAmount) ? tipAmountRounded : ''}
+          {!isNaN(tipAmount) ? tipAmountRounded : '0.00'}
         </div>
       </div>
       <div className='amount-container'>
@@ -32,7 +32,7 @@ export default function ResultCard(props) {
         </div>
         <div className='amount-data'>
           {'$'}
-          {!isNaN(split) ? split.toFixed(2) : ''}
+          {!isNaN(split) ? split.toFixed(2) : '0.00'}
         </div>
       </div>
       <div onClick={resetAllHandler} className='reset-btn'>
