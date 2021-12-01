@@ -3,6 +3,15 @@
   position: relative;
 }
 
+.input-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .icon-person {
   top: 5.8rem;
   left: 2.5rem;

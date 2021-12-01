@@ -10,6 +10,9 @@ $dk-cyan-2: hsl(184, 14%, 56%);
 $bg: hsl(185, 41%, 84%);
 $light-cyan-2: hsl(189, 41%, 97%);
 
+$error: hsl(12, 46%, 67%);
+$error-input: hsl(12, 31%, 54%);
+
 *,
 *::before,
 *::after {
@@ -44,6 +47,12 @@ body {
   color: $dk-cyan-1;
 }
 
+.input-error {
+  font-size: 1.6rem;
+  color: $error;
+  font-weight: 700;
+}
+
 .input-bar,
 .custom-input-bar {
   color: $vdk-cyan;
@@ -51,6 +60,14 @@ body {
 
   &:focus {
     outline: 2px solid $strong-cyan;
+  }
+}
+
+.input-bar-error {
+  outline: 2px solid $error-input;
+
+  &:focus {
+    outline: 2px solid $error-input;
   }
 }
 

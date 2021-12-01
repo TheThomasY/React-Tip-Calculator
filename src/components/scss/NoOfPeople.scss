@@ -3,6 +3,14 @@
   position: relative;
 }
 
+.input-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-error {
+}
+
 .icon-person {
   top: 5.8rem;
   left: 2.5rem;
