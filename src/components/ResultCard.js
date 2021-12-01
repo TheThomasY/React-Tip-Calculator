@@ -9,6 +9,16 @@ export default function ResultCard(props) {
   let tipAmountRounded = Math.floor(tipAmount * 100) / 100;
   let split = billTotal / peopleNo + tipAmount;
 
+  if (
+    tipAmountRounded < 0 ||
+    split < 0 ||
+    tipAmountRounded === Infinity ||
+    split === Infinity
+  ) {
+    tipAmountRounded = '0.00';
+    split = 0;
+  }
+
   const resetAllHandler = () => {
     props.onReset();
   };

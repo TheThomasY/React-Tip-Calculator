@@ -33,6 +33,12 @@ body {
   color: #5e7a7d;
 }
 
+.input-error {
+  font-size: 1.6rem;
+  color: #d29484;
+  font-weight: 700;
+}
+
 .input-bar,
 .custom-input-bar {
   color: #00494d;
@@ -42,6 +48,14 @@ body {
 .input-bar:focus,
 .custom-input-bar:focus {
   outline: 2px solid #26c0ab;
+}
+
+.input-bar-error {
+  outline: 2px solid #ae7465;
+}
+
+.input-bar-error:focus {
+  outline: 2px solid #ae7465;
 }
 
 .tip-grid li {
