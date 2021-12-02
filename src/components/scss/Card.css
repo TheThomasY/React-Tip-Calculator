@@ -7,7 +7,14 @@
   background-color: #fff;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1249px) {
+  .main-card {
+    width: 65%;
+    margin: 4rem auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 1250px) {
   .main-card {
     width: 65%;
     max-width: 93rem;

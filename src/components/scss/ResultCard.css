@@ -39,7 +39,13 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) and (max-width: 1249px) {
+  .amount-data {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
   .result-card {
     width: 100%;
     margin-left: 5rem;
@@ -54,6 +60,9 @@
   }
   .amount-text {
     margin-right: 1rem;
+  }
+  .amount-data {
+    font-size: 5rem;
   }
   .reset-btn {
     margin-top: auto;
