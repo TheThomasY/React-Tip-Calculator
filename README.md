@@ -22,9 +22,9 @@ It is a solution to the [Tip calculator app challenge on Frontend Mentor](https:
 
 ## Future Updates 🎁
 
-- [ ] Add error messages
-- [ ] Start checking validity of input
-- [ ] Change "empty" states of output to be $0.00
+- [✓] Add error messages
+- [ ] Add check and error to bill input
+- [✓] Change "empty" states of output to be $0.00
 
 ## Author 🧑
 
