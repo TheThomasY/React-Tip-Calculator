@@ -22,8 +22,8 @@ It is a solution to the [Tip calculator app challenge on Frontend Mentor](https:
 
 ## Future Updates 🎁
 
+- [ ] Add format error message to bill input
 - [x] Add error messages
-- [ ] Add check and error to bill input
 - [x] Change "empty" states of output to be $0.00
 
 ## Author 🧑
