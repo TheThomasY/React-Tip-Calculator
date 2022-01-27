@@ -1,4 +1,4 @@
-<h1 align="center">React Tip Calculator</h1>
+<h1 align="center">SPLITTER - Restaurant Tip Calculator</h1>
 
 This site makes splitting a bill much easier. Simply enter the total bill amount, tip percentage and number of people - this will calculate the required tip per person and also the total each person owes. I built this using React and styled it with Sass.
 
@@ -6,6 +6,8 @@ This site makes splitting a bill much easier. Simply enter the total bill amount
 ## Links 🌟
 
 - Live site: [Try it out here 💻](https://thethomasy.github.io/React-Tip-Calculator/ 'Live View')
+
+- It is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX).
 
 ## Screenshots 📷
 
