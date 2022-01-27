@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import logo from './images/logo.svg';
 import Card from './components/Card';
@@ -8,6 +8,10 @@ import NoOfPeople from './components/NoOfPeople';
 import ResultCard from './components/ResultCard';
 
 function App() {
+  useEffect(() => {
+    document.title = 'SPLITTER';
+  }, []);
+
   const [tipData, setTipData] = useState({
     billTotal: '',
     tipPercentage: '',
